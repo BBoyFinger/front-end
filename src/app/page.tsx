@@ -1,3 +1,4 @@
+import LandingPage from "@/components/LandingPage/page";
 import {
   Card,
   CardContent,
@@ -10,7 +11,7 @@ import {
 export default function Home() {
   return (
     <div className="container">
-      
+      <LandingPage />
     </div>
   );
 }

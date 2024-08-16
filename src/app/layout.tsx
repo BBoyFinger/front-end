@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
 
 import "./globals.css";
-import Header from "../components/Header";
+
 import { ThemeProvider } from "@/components/theme-provider";
+import NavBar from "@/components/LandingPage/NavBar";
 
 export const metadata: Metadata = {
   title: "Venn Sneaker",
@@ -16,14 +17,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="font-Raleway" data-theme="light">
+      <body className="font-Raleway my-4">
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
           enableSystem
           disableTransitionOnChange
         >
-          <Header />
+          <NavBar />
           {children}
         </ThemeProvider>
       </body>
