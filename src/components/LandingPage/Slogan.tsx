@@ -9,9 +9,9 @@ const Slogan = () => {
           Modern
         </Badge>
       </div>
-      <div>
-        <h1 className="uppercase text-[60px] leading-none">Release Style <br /> With <span className="text-gray-400">Confidence</span></h1>
-        <p className="text-sm text-gray-400">Perfect blend of fashion and ease in our comfortable Clothes.</p>
+      <div className="mt-3">
+        <h1 className="uppercase text-4xl lg:text-[60px] leading-none">Release Style <br /> With <span className="text-gray-400">Confidence</span></h1>
+        <p className="text-sm text-gray-400 leading-1 mt-3">Perfect blend of fashion and ease in our comfortable Clothes.</p>
       </div>
     </>
   );
