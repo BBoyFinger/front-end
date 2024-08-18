@@ -63,27 +63,28 @@ const Brand = () => {
           <h1 className="uppercase text-xl font-bold">Brands</h1>
         </div>
         {/* Carousel */}
-        <div className="w-[400px]">
+        <div className="max-w-full">
           <div className="mt-3">
             <Carousel
               className="w-full max-w-sm"
               plugins={[
                 Autoplay({
                   delay: 2000,
-                  
                 }),
               ]}
             >
               <CarouselContent className="ml-1 flex justify-center items-center">
                 {brandImage.map((items) => (
-                  <CarouselItem className="pl-1 md:basis-1/2 lg:basis-1/3">
-                    <div className="p-1">
+                  <CarouselItem
+                    className="pl-1 md:basis-1/2 lg:basis-1/3"
+                    key={items.id}
+                  >
+                    <div className="p-1 flex justify-center items-center">
                       <Image
-                        key={items.id}
                         src={items.imageUrl}
                         alt={items.altImage}
-                        width={200}
-                        height={200}
+                        width={600}
+                        height={600}
                         className="max-w-full h-auto object-contain"
                       />
                     </div>

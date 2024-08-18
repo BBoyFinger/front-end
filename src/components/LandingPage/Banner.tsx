@@ -24,8 +24,8 @@ const ßanner = () => {
             <Image
               src="/slider_1.webp"
               alt=" banner2"
-              width={960}
-              height={960}
+              width={1920}
+              height={600}
               className="w-full h-auto object-contain"
             />
           </CarouselItem>
@@ -33,8 +33,8 @@ const ßanner = () => {
             <Image
               src="/slider_2.jpg"
               alt="banner3"
-              width={960}
-              height={960}
+              width={1920}
+              height={600}
               className="w-full h-auto object-contain"
             />
           </CarouselItem>
@@ -42,14 +42,13 @@ const ßanner = () => {
             <Image
               src="/slider_3.jpg"
               alt="banner4"
-              width={960}
-              height={960}
+              width={1920}
+              height={600}
               className="w-full h-auto object-contain"
             />
           </CarouselItem>
         </CarouselContent>
-        <CarouselPrevious className="hidden lg:flex" />
-        <CarouselNext className="hidden lg:flex" />
+    
       </Carousel>
     </div>
   );

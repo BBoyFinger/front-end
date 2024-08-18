@@ -1,11 +1,11 @@
-import React from "react";
-import Product from "../Product/Product";
+import React from 'react'
+import Product from '../Product/Product'
 
-const PopularProduct = () => {
+const Trending = () => {
   return (
     <>
       <div className="my-3 flex justify-between items-center">
-        <h1 className="uppercase text-xl font-bold">Popular Collection</h1>
+        <h1 className="uppercase text-xl font-bold">Trending Now</h1>
         <p className="uppercase font-bold text-sm">Discovery All Products</p>
       </div>
       <div className="grid grid-col-1 md:grid-cols-2 lg:grid-cols-3 gap-3 mt-3">
@@ -14,7 +14,7 @@ const PopularProduct = () => {
         <Product />
       </div>
     </>
-  );
-};
+  )
+}
 
-export default PopularProduct;
+export default Trending
