@@ -5,6 +5,8 @@ import {
   RiShoppingCart2Line,
 } from "react-icons/ri";
 import { ModeToggle } from "../mode-toggle";
+import Search from "../Search/Search";
+import Cart from "../ShoppingCart/Cart";
 
 const HeaderIcons = () => {
   return (
@@ -12,11 +14,12 @@ const HeaderIcons = () => {
       <div className="flex gap-4 items-center">
         <ModeToggle />
         <span className="border-solid border-r border-gray-200 h-[30px]"></span>
-        <RiSearch2Line className="w-[20px] h-[20px] " />
+        <Search />
         <span className="border-solid border-r border-gray-200 h-[30px]"></span>
         <RiHeart3Line className="w-[20px] h-[20px]" />
         <span className="border-solid border-r border-gray-200 h-[30px]"></span>
-        <RiShoppingCart2Line className="w-[20px] h-[20px]" />
+        <Cart />
+
       </div>
     </>
   );

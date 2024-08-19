@@ -49,7 +49,7 @@ const Brand = () => {
       altImage: "brand7",
     },
     {
-      id: "5",
+      id: "8",
       imageUrl: "/brand/8.png",
       altImage: "brand8",
     },
@@ -83,8 +83,8 @@ const Brand = () => {
                       <Image
                         src={items.imageUrl}
                         alt={items.altImage}
-                        width={600}
-                        height={600}
+                        width={100}
+                        height={100}
                         className="max-w-full h-auto object-contain"
                       />
                     </div>

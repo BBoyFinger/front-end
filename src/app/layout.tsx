@@ -3,6 +3,8 @@ import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 import NavBar from "@/components/LandingPage/NavBar";
 import Footer from "@/components/Footer/Footer";
+import CartProviders from "@/components/ShoppingCart/CartProviders";
+import { CartModal } from "@/components/ShoppingCart/Cart";
 
 export const metadata: Metadata = {
   title: "Venn Sneaker",
@@ -23,9 +25,12 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <NavBar />
-          {children}
-          <Footer />
+          <CartProviders>
+            <NavBar />
+            <CartModal />
+            {children}
+            <Footer />
+          </CartProviders>
         </ThemeProvider>
       </body>
     </html>

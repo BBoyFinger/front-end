@@ -1,3 +1,4 @@
+"use client"
 import React from "react";
 import { DesktopMenu, MobileMenu } from "../Menus/Menus";
 import { IoIosHome, IoIosNotificationsOutline } from "react-icons/io";
@@ -5,7 +6,11 @@ import { CiHeart, CiUser } from "react-icons/ci";
 import { MdCategory } from "react-icons/md";
 
 
+
+
 const NavBar = () => {
+
+
   const links = [
     {
       id: "1",
