@@ -1,3 +1,5 @@
+"use client"
+import Loading from "@/components/Button/Loading";
 import LandingPage from "@/components/LandingPage/page";
 import {
   Card,
@@ -7,11 +9,9 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
+import { useState } from "react";
 
 export default function Home() {
-  return (
-    <div className="">
-      <LandingPage />
-    </div>
-  );
+  const [isLoading, setIsLoading] = useState(false);
+  return <div className="">{isLoading ? <Loading /> : <LandingPage />}</div>;
 }

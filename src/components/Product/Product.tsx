@@ -19,7 +19,7 @@ const Product = () => {
     <>
       <div>
         <Card>
-          <CardHeader className="p-0  relative">
+          <CardHeader className="p-0 relative">
             <Image
               alt="product"
               width={400}
