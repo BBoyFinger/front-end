@@ -8,11 +8,12 @@ export interface MenuItemType {
   icon: React.ReactNode;
 }
 
-export interface ProductType{
+export type productType = {
   id: string;
   name: string;
   description: string;
   price: string;
   quality: number;
   currency: string;
+  images: string[];
 }

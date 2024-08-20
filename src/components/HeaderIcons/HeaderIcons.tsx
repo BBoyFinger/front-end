@@ -16,7 +16,7 @@ const HeaderIcons = () => {
         <span className="border-solid border-r border-gray-200 h-[30px]"></span>
         <Search />
         <span className="border-solid border-r border-gray-200 h-[30px]"></span>
-        <RiHeart3Line className="w-[20px] h-[20px]" />
+        <RiHeart3Line className="w-[20px] h-[20px] hover:bg-gray-300 rounded-full"  />
         <span className="border-solid border-r border-gray-200 h-[30px]"></span>
         <Cart />
 

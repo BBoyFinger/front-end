@@ -1,10 +1,10 @@
 import React from "react";
 import { Button } from "../ui/button";
-import { ProductType } from "@/lib/interface";
+import { productType } from "@/lib/interface";
 import { useShoppingCart } from "use-shopping-cart";
 
 interface CartProps {
-  product: ProductType;
+  product: productType;
 }
 
 const AddToCartBtn: React.FC<CartProps> = ({ product }) => {

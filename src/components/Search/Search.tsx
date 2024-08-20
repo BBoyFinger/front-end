@@ -12,11 +12,11 @@ import { Input } from "@/components/ui/input";
 
 const Search = () => {
   return (
-    <div>
+    <div className="hover:bg-gray-200 p-1 rounded-full">
       <Sheet>
         <SheetTrigger className="flex">
           <SheetTitle>
-            <RiSearch2Line className="w-[20px] h-[20px] " />
+            <RiSearch2Line className="w-[20px] h-[20px]" />
           </SheetTitle>
         </SheetTrigger>
         <SheetContent side={"top"} className="w-full h-[200px] flex items-center ">

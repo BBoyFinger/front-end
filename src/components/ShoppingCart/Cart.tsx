@@ -19,10 +19,12 @@ import Link from "next/link";
 const Cart = () => {
   const { handleCartClick } = useShoppingCart();
   return (
-    <BsHandbag
-      onClick={handleCartClick}
-      className="cursor-pointer w-[20px] h-[20px]"
-    />
+    <div className="hover:bg-gray-200 p-1 rounded-full">
+      <BsHandbag
+        onClick={handleCartClick}
+        className="cursor-pointer w-[20px] h-[20px]"
+      />
+    </div>
   );
 };
 
@@ -81,9 +83,7 @@ export const CartModal = () => {
                 </>
               ))}
               <Link href="/checkout">
-                <Button>
-                  Check out
-                </Button>
+                <Button>Check out</Button>
               </Link>
             </>
           )}
