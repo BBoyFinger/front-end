@@ -10,7 +10,7 @@ const Slogan = () => {
           Modern
         </Badge>
 
-        <div className="p-3 lg:hidden border-solid border border-gray-300 rounded-full cursor-pointer">
+        <div className="p-1 hover:bg-slate-500 lg:hidden border-solid border border-gray-300 rounded-full cursor-pointer">
           <Search />
         </div>
       </div>

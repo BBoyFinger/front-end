@@ -60,9 +60,9 @@ export const CartModal = () => {
                     <Image
                       width={100}
                       height={100}
-                      src="/product/1.jpg"
+                      src={item.image || '/default-image.webp'}
                       alt="product"
-                      className="w-32 h-32 object-cover"
+                      className="w-ful h-auto object-contain"
                     />
                     <div className="flex flex-col items-start gap-4">
                       <div className="font-semibold text-[1.25rem]">

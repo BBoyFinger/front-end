@@ -12,7 +12,7 @@ import { Input } from "@/components/ui/input";
 
 const Search = () => {
   return (
-    <div className="hover:bg-gray-200 p-1 rounded-full">
+    <div className="rounded-full">
       <Sheet>
         <SheetTrigger className="flex">
           <SheetTitle>

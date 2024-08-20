@@ -5,6 +5,7 @@ import NavBar from "@/components/LandingPage/NavBar";
 import Footer from "@/components/Footer/Footer";
 import CartProviders from "@/components/ShoppingCart/CartProviders";
 import { CartModal } from "@/components/ShoppingCart/Cart";
+import Search from "@/components/Search/Search";
 
 export const metadata: Metadata = {
   title: "Venn Sneaker",

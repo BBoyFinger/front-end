@@ -13,5 +13,5 @@ import { useState } from "react";
 
 export default function Home() {
   const [isLoading, setIsLoading] = useState(false);
-  return <div className="">{isLoading ? <Loading /> : <LandingPage />}</div>;
+  return <div>{isLoading ? <Loading /> : <LandingPage />}</div>;
 }
