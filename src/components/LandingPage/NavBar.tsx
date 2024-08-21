@@ -20,8 +20,8 @@ const NavBar = () => {
     },
     {
       id: "2",
-      title: "Category",
-      href: "/category",
+      title: "Products",
+      href: "/product",
       icon: <MdCategory />,
     },
     {

@@ -1,5 +1,6 @@
 import React from "react";
 import Product from "../Product/Product";
+import products from "@/lib/mock/Products";
 
 const PopularProduct = () => {
   return (
@@ -9,9 +10,9 @@ const PopularProduct = () => {
         <p className="uppercase font-bold text-sm">Discovery All Products</p>
       </div>
       <div className="grid grid-col-1 md:grid-cols-2 lg:grid-cols-3 gap-3 mt-3">
-        <Product />
-        <Product />
-        <Product />
+        {products.map((product) => (
+          <Product product={product} />
+        ))}
       </div>
     </>
   );

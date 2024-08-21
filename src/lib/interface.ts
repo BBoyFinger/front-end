@@ -1,6 +1,3 @@
-import { Component } from "react";
-import { IconType } from "react-icons";
-
 export interface MenuItemType {
   id: string;
   title: string;
@@ -17,4 +14,10 @@ export interface ProductType {
   currency: string;
   images?: string[] | any;
   categories: string[];
+}
+
+export interface BreadcrumbType{
+  id: string;
+  name: string;
+  href: string;
 }

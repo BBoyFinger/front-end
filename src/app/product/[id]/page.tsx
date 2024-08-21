@@ -21,7 +21,7 @@ const ProductDetail = ({ params }: { params: { id: string } }) => {
   }, [params.id]);
 
   return (
-    <div className="container my-6">
+    <div className="container mb-[200px]">
       {product ? (
         <ProductPage product={product} productId={params.id} />
       ) : (
