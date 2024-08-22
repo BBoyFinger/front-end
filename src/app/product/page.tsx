@@ -22,14 +22,19 @@ import { Button } from "@/components/ui/button";
 
 const Products = () => {
   const [isFillter, setIsFillter] = useState(false);
-  const [filters, setFilter] = useState("Show Filter");
+  const [filters, setFilter] = useState("Show Filters");
   const breadcrumbs: BreadcrumbType[] = [
     { id: "1", name: "Category", href: "/category" },
     { id: "2", name: "Product", href: "/category/product" },
   ];
 
   const handleShowFilter = () => {
-    if(is)
+    setIsFillter(!isFillter);
+    if(!isFillter){
+      setFilter("Hidden Filters")
+    }else{
+      setFilter("Show Filters")
+    }
     
   };
 
