@@ -14,23 +14,22 @@ interface BreadcrumProps {
 }
 
 const BreadcrumbComponent: React.FC<BreadcrumProps> = ({ breadcrumbs }) => {
-  console.log(typeof breadcrumbs);
   return (
-    <div>
-      <Breadcrumb>
+    <div className="my-3">
+     <Breadcrumb>
         <BreadcrumbList>
           <BreadcrumbItem>
             <BreadcrumbLink href="/">Home</BreadcrumbLink>
           </BreadcrumbItem>
-          <BreadcrumbSeparator />
-          {breadcrumbs?.map((item) => (
-            <div className="flex" key={item.id}>
+          {breadcrumbs?.map((item, index) => (
+            <React.Fragment key={item.id}>
+              <BreadcrumbSeparator />
               <BreadcrumbItem>
-                <BreadcrumbLink href="${breadcrumb.href}">
+                <BreadcrumbLink href={item.href}>
                   {item.name}
                 </BreadcrumbLink>
               </BreadcrumbItem>
-            </div>
+            </React.Fragment>
           ))}
         </BreadcrumbList>
       </Breadcrumb>

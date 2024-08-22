@@ -23,14 +23,14 @@ const Product: React.FC<ProductProps> = ({ product }) => {
     <>
       <div>
         <Link href={`product/${product?.id}`}>
-          <Card className="">
+          <Card className="w-full h-full">
             <CardHeader className="p-0 relative">
               <Image
                 alt="product"
                 width={400}
                 height={400}
                 src={product?.images[0]}
-                className="w-full h-[400px] object-contain"
+                className="w-full h-auto object-contain"
               />
               <div className="absolute top-3 right-5 ">
                 <Badge className="gap-1 w-18 justify-center p-[2px] items-center bg-slate-200 hover:bg-slate-50 hidden lg:flex">

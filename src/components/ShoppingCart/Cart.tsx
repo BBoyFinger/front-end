@@ -15,6 +15,7 @@ import { Button } from "../ui/button";
 import { Separator } from "@radix-ui/react-dropdown-menu";
 import Image from "next/image";
 import Link from "next/link";
+import React from "react";
 
 const Cart = () => {
   const { handleCartClick } = useShoppingCart();
@@ -55,8 +56,8 @@ export const CartModal = () => {
           ) : (
             <>
               {Object.values(cartDetails ?? {}).map((item) => (
-                <>
-                  <div className="flex gap-4">
+                <React.Fragment key={item.id}>
+                  <div className="flex gap-4" >
                     <Image
                       width={100}
                       height={100}
@@ -80,7 +81,7 @@ export const CartModal = () => {
                     </div>
                   </div>
                   <Separator className="my-4" />
-                </>
+                </React.Fragment>
               ))}
               <Link href="/checkout">
                 <Button>Check out</Button>

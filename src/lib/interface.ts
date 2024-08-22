@@ -21,3 +21,14 @@ export interface BreadcrumbType{
   name: string;
   href: string;
 }
+
+interface Option {
+  label: string;
+  value: string;
+}
+
+export interface FilterType{
+  id: string;
+  name: string;
+  options: Option[];
+}
