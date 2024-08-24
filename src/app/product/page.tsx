@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import Breadcrumb from "@/components/Breadcrumb/Breadcrumb";
 
 import {
@@ -16,13 +16,13 @@ import products from "@/lib/mock/Products";
 import { mockFilters } from "@/lib/mock/Fillter";
 
 import React, { useState } from "react";
-import Filters from "@/components/Filters/Filters";
+import { DesktopFilters, MobileFillter } from "@/components/Filters/Filters";
 import Product from "@/components/Product/Product";
 import { Button } from "@/components/ui/button";
 
 const Products = () => {
-  const [isFillter, setIsFillter] = useState(false);
-  const [filters, setFilter] = useState("Show Filters");
+  const [isFillter, setIsFillter] = useState(true);
+  const [filters, setFilter] = useState("Hide Filters");
   const breadcrumbs: BreadcrumbType[] = [
     { id: "1", name: "Category", href: "/category" },
     { id: "2", name: "Product", href: "/category/product" },
@@ -30,12 +30,11 @@ const Products = () => {
 
   const handleShowFilter = () => {
     setIsFillter(!isFillter);
-    if(!isFillter){
-      setFilter("Hidden Filters")
-    }else{
-      setFilter("Show Filters")
+    if (isFillter) {
+      setFilter("Show Filters");
+    } else {
+      setFilter("Hide Filters");
     }
-    
   };
 
   return (
@@ -50,18 +49,20 @@ const Products = () => {
           <p className="text-[16px] text-gray-500 font-normal">98 Items</p>
           <div className="flex items-center gap-4">
             <Button
-              className="flex justify-center items-center gap-1 cursor-pointer"
+              className="md:flex justify-center items-center gap-1 cursor-pointer hidden"
               variant={"ghost"}
               onClick={() => handleShowFilter()}
             >
               {filters}
               <RiMenu5Line />
             </Button>
+            <div className="md:hidden">
+              <MobileFillter filters={mockFilters} />
+            </div>
             <div className="flex items-center gap-2">
-              Sort:
               <Select>
-                <SelectTrigger className="w-[180px]">
-                  <SelectValue placeholder="Select a fruit" />
+                <SelectTrigger className="w-[200px]">
+                  <SelectValue placeholder="Sort: " />
                 </SelectTrigger>
                 <SelectContent>
                   <SelectGroup>
@@ -78,11 +79,16 @@ const Products = () => {
           </div>
         </div>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-4 mt-4 gap-3">
+      <div
+        className={`grid ${
+          isFillter ? "md:grid-cols-4" : "md:grid-cols-3"
+        } grid-cols-1  mt-4 gap-3`}
+      >
         {/* Side bar */}
-        <div>
-          <Filters filters={mockFilters}/>
+        <div className={`${isFillter ? "md:grid" : "hidden"} hidden`}>
+          <DesktopFilters filters={mockFilters} />
         </div>
+
         {/* Product */}
         <div className="grid grid-cols-2 md:grid-cols-3 col-span-3 gap-2">
           {products.map((product) => (

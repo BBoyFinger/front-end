@@ -10,6 +10,7 @@ import Search from "@/components/Search/Search";
 export const metadata: Metadata = {
   title: "Venn Sneaker",
   description: "Welcome to ventt, The world of sneaker",
+  
 };
 
 export default function RootLayout({
@@ -19,6 +20,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <link rel="icon" href="/logo.png" />
+      </head>
       <body className="font-Raleway my-4">
         <ThemeProvider
           attribute="class"

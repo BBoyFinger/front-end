@@ -14,7 +14,7 @@ const Member = () => {
           <Button className="w-32 bg-white text-black rounded-[15px] hover:text-white">Join Now</Button>
         </div>
         <div>
-          <Image width={300} height={300} src="/logo.png" alt="logo" className="w-full object-contain h-auto" />
+          <Image width={300} height={300} src="/logo.png" alt="logo" className="w-full rounded-full object-contain h-auto" />
         </div>
       </div>
     </>

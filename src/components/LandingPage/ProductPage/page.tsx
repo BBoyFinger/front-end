@@ -82,6 +82,7 @@ const ProductCarousel: React.FC<CarouseProps> = ({
                     src={imageUrl}
                     alt={"Product Detail"}
                     className={"object-contain w-full relative"}
+                    priority
                   />
                 </CardContent>
               </Card>
@@ -113,6 +114,7 @@ const ProductReview: React.FC<CarouseProps> = ({
             height={200}
             src={imageUrl}
             alt={"Product Preview"}
+            priority
             className={`${
               idx == selectedIdx ? "blur-none" : "blur-sm"
             } object-contain w-[120px] h-[120px] md:w-[200px] relative`}

@@ -69,14 +69,17 @@ const Footer = () => {
     {
       id: "1",
       title: "Privacy",
+      href: "/privacy",
     },
     {
       id: "2",
       title: "Terms",
+      href: "/terms",
     },
     {
       id: "3",
       title: "Security",
+      href: "/security",
     },
   ];
   return (
@@ -92,7 +95,7 @@ const Footer = () => {
               <span key={social.id}> {social.icon}</span>
             ))}
           </div>
-          <div className="mt-4">
+          <div className="mt-1">
             <p className="font-bold text-sm my-3">
               Sign up for personalized offers
             </p>
@@ -134,9 +137,9 @@ const Footer = () => {
         <div className="flex flex-col gap-2 font-normal col-span-1">
           <h1 className="font-bold">Legal & Terms</h1>
           {terms.map((terms) => (
-            <span key={terms.id} className="text-sm">
+            <Link href={terms.href} key={terms.id} className="text-sm">
               {terms.title}
-            </span>
+            </Link>
           ))}
         </div>
       </div>
