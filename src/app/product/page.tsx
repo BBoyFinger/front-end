@@ -92,7 +92,7 @@ const Products = () => {
         {/* Product */}
         <div className="grid grid-cols-2 md:grid-cols-3 col-span-3 gap-2">
           {products.map((product) => (
-            <Product product={product} />
+            <Product product={product} key={product.id} />
           ))}
         </div>
       </div>
