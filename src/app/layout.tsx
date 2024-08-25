@@ -23,7 +23,7 @@ export default function RootLayout({
       <head>
         <link rel="icon" href="/logo.png" />
       </head>
-      <body className="font-Raleway my-4">
+      <body className="font-Raleway">
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
@@ -33,7 +33,7 @@ export default function RootLayout({
           <CartProviders>
             <NavBar />
             <CartModal />
-            {children}
+            <div className="py-10">{children}</div>
             <Footer />
           </CartProviders>
         </ThemeProvider>

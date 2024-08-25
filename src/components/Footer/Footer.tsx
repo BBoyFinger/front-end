@@ -111,7 +111,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="flex flex-col gap-2 font-normal col-span-1">
-          <h1 className="font-bold">Links</h1>
+          <h2 className="font-bold">Links</h2>
           {links.map((link) => (
             <Link href={link.href} key={link.linkId} className="text-sm">
               {link.title}
@@ -119,7 +119,7 @@ const Footer = () => {
           ))}
         </div>
         <div className="flex flex-col gap-2 font-normal col-span-1">
-          <h1 className="font-bold">Features</h1>
+          <h2 className="font-bold">Features</h2>
           {features.map((feature) => (
             <Link key={feature.id} href={feature.href} className="text-sm">
               {feature.title}
@@ -127,7 +127,7 @@ const Footer = () => {
           ))}
         </div>
         <div className="flex flex-col gap-2 font-normal col-span-1">
-          <h1 className="font-bold">Our Store</h1>
+          <h2 className="font-bold">Our Store</h2>
           {stores.map((store) => (
             <span key={store.id} className="text-sm">
               {store.storeName}
@@ -135,7 +135,7 @@ const Footer = () => {
           ))}
         </div>
         <div className="flex flex-col gap-2 font-normal col-span-1">
-          <h1 className="font-bold">Legal & Terms</h1>
+          <h2 className="font-bold">Legal & Terms</h2>
           {terms.map((terms) => (
             <Link href={terms.href} key={terms.id} className="text-sm">
               {terms.title}

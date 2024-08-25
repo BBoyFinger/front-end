@@ -32,7 +32,7 @@ const products: ProductType[] = [
   },
   {
     id: "3",
-    name: "PUMA x LAMELO BALL MB.03 Lo Lava Men's",
+    name: "PUMA x LAMELO BALL",
     description:
       "Slide into LaMelo Ball's interstellar universe with the MB.03. NITRO",
     price: "240",

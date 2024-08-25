@@ -29,7 +29,7 @@ const Product: React.FC<ProductProps> = ({ product }) => {
               width={300}
               height={300}
               src={product?.images[0]}
-              className="w-full md:h-[300px] h-[200px] object-fill rounded-t-xl"
+              className="w-full md:h-[300px] h-[200px] object-cover rounded-t-xl"
               quality={100}
               priority
             />
@@ -46,7 +46,7 @@ const Product: React.FC<ProductProps> = ({ product }) => {
             </div>
           </CardHeader>
           <CardFooter className="p-2 flex justify-between">
-            <h2 className="text-sm font-semibold">{product?.name}</h2>
+            <h2 className="text-sm font-semibold truncate ...">{product?.name}</h2>
             <p className="text-sm">${product?.price}</p>
           </CardFooter>
         </Card>
