@@ -68,12 +68,12 @@ const Footer = () => {
   const terms = [
     {
       id: "1",
-      title: "Privacy",
+      title: "Privacy Policy",
       href: "/privacy",
     },
     {
       id: "2",
-      title: "Terms",
+      title: "Terms and Conditions",
       href: "/terms",
     },
     {
